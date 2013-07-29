@@ -59,7 +59,6 @@ public class DeviceScanActivity extends ListActivity {
 		return true;
 	}
 
-	//...
 	private void init(){
 		// Initializes Bluetooth adapter.
 		final BluetoothManager bluetoothManager =
@@ -89,7 +88,7 @@ public class DeviceScanActivity extends ListActivity {
 				@Override
 				public void run() {
 					mScanning = false;
-					Log.d(TAG,"run stopLeScan");
+					Log.d(TAG,getCtx() + "run stopLeScan");
 					mBluetoothAdapter.stopLeScan(mLeScanCallback);
 				}
 			}, SCAN_PERIOD);
