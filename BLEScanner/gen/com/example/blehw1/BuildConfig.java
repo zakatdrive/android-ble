@@ -1,4 +1,5 @@
 /** Automatically generated file. DO NOT MODIFY */
+
 package com.example.blehw1;
 
 public final class BuildConfig {
